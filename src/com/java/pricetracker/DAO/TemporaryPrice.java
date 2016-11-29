@@ -17,7 +17,7 @@ import org.hibernate.annotations.Proxy;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
-public class Price2 {
+public class TemporaryPrice {
 	
 	private int id;
 	private String title;

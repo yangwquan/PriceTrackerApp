@@ -23,8 +23,7 @@
 	</context:component-scan>
 	<context:component-scan base-package="com.java.pricetracker.service">
 	</context:component-scan>
-	<context:component-scan base-package="com.java.pricetracker.task">
-	</context:component-scan>
+	
 	<mvc:annotation-driven></mvc:annotation-driven>
 
 
@@ -44,7 +43,7 @@
         <property name="annotatedClasses">
             <list>
                 <value>com.java.pricetracker.DAO.Price</value>
-                <value>com.java.pricetracker.DAO.Price1</value>
+                
                 <value>com.java.pricetracker.DAO.PriceHistory</value>
             </list>
         </property>
@@ -68,11 +67,9 @@
         <property name="dataSource" ref="dataSource" />
     </bean>
          
-    <bean id="priceDAO" class="com.java.pricetracker.DAO.PriceDAO">
-        <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory" />
-    </bean>  
     
-    <bean id="price1DAO" class="com.java.pricetracker.DAO.Price1DAO">
+    
+    <bean id="priceDAO" class="com.java.pricetracker.DAO.PriceDAO">
         <property name="sessionFactory" ref="hibernate4AnnotatedSessionFactory" />
     </bean>
     

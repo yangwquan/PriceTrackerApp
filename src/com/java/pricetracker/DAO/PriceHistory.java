@@ -33,7 +33,7 @@ public class PriceHistory {
 	
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name="priceId")
-	private Price1 price1;
+	private Price price;
 	
 	@Column(name="value")
 	private double value;
@@ -51,11 +51,11 @@ public class PriceHistory {
 	public int getId(){
 		return this.id;
 	}
-	public void setPrice1(Price1 price1){
-		this.price1 = price1;
+	public void setPrice(Price price){
+		this.price = price;
 	}
-	public Price1 getPrice1(){
-		return this.price1;
+	public Price getPrice(){
+		return this.price;
 	}
 	public void setValue(double value){
 		this.value = value;
